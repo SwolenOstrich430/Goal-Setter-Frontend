@@ -1,0 +1,38 @@
+.form-label-and-input-form {
+    margin-bottom: 12.5px;
+    width: 90%;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2.5px;
+    padding-left: 5px;
+    color: #5757a0;;
+}
+
+.form-input {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #222247;
+    transition: 250ms;
+    width: 90%;
+    background: transparent;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.form-input-inline {
+    width: 70%;
+    margin: 0px;
+}
+
+.form-input:focus {
+    outline: none;
+    padding-bottom: 7.5px;
+    border-bottom: 2px solid #5757a0;
+}

@@ -1,0 +1,19 @@
+.goals-main-list-container {
+    width: 95%;
+    /* border-collapse: separate; */
+    /* border-spacing: 20px; */
+}
+
+.goals-main-list-head {
+    /* padding: 0 10px; */
+
+}
+
+.goals-main-list-headers {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.goals-main-list-body-container {
+
+}

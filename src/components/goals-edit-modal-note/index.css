@@ -1,0 +1,30 @@
+.note-container {
+    margin-top: 20px;    
+}
+
+.note-text-container {
+    padding: 10px;
+    color: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.note-text {
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+}
+
+.note-creation-date {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+}

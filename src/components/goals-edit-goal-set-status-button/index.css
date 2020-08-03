@@ -1,0 +1,12 @@
+.goals-edit-goal-modal-change-status-button {
+    width: 100px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.goals-edit-goal-modal-change-status-button:focus {
+    outline: none;
+}

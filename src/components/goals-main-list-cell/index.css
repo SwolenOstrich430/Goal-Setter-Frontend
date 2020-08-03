@@ -1,0 +1,22 @@
+.goal-list-cell-container {
+    word-wrap: break-word;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.goals-status-container {
+    display: flex;
+    align-content: center;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 8px;
+}
+
+.goal-list-cell-text-status {
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+}

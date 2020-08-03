@@ -1,0 +1,6 @@
+.goals-filters-container {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

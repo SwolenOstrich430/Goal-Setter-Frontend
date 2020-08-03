@@ -1,0 +1,17 @@
+.base-text-area {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #222247;
+    border-radius: 4px;
+    transition: 250ms;
+    width: 90%;
+    height: 80px;
+    background: transparent;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* .base-text-area:focus {
+    outline: none;
+} */

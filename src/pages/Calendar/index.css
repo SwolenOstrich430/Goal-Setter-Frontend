@@ -1,0 +1,16 @@
+.calendar-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.calendar-main-container {
+    width: 70%;
+    height: 100%;
+}
+
+.calendar-side-container {
+    width: 30%;
+    height: 100%;
+
+}

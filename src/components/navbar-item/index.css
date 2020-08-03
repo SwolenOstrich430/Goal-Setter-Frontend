@@ -1,0 +1,24 @@
+.navbar-item-container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    filter: grayscale(70%) opacity(0.7);
+    color: white;
+}
+
+.navbar-item-container:hover {
+    filter: grayscale(0) opacity(1);
+    background-color: #6565aa;
+    transition: 500ms ease-in-out;
+}
+
+.navbar-item-image {
+    max-width: 30px;
+    height: 60px;
+    padding-left: 20px;
+}
+
+.navbar-item-label {
+    width: 60%;
+    margin: 0 0 0 40px;
+}

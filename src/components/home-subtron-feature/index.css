@@ -1,0 +1,14 @@
+.home-subtron-feature-container {
+    text-align: center;
+    width: 20%;
+}
+
+.home-subtron-feature-image {
+    width: 40px;
+    height: 40px;
+}
+
+.home-subtron-feature-container p {
+    margin: 10px 0 0 0;
+    color: #48487a;
+}

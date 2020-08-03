@@ -1,0 +1,24 @@
+.goals-complete-percentage-container {
+    display: flex;
+    align-content: flex-start;
+    /* justify-content: center; */
+    width: 12%;
+}
+
+.goals-percentage-complete-sub {
+    width: 30px;
+    height: 30px;
+}
+
+.goals-percentage-complete-main {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+.goals-percent-complete-text {
+    margin: 0 0 0 10px;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 500;
+}

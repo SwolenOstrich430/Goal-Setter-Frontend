@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Main from "./pages/Main";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard"
+import Goals from "./pages/Goals"
+import Calendar from "./pages/Calendar";
+import { Provider } from "react-redux";
+import store from "./store.js";
+import SideNavbar from "./components/navbar-side";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Router>
+        <Route component={Home} path="/" exact={true}/>
+        <SideNavbar/>
+        <Main>
+          <Route component={Goals} path="/goals" exact={true}/>
+          <Route component={Dashboard} path="/dashboard" exact={true}/>
+          <Route component={Calendar} path="/calendar" exact={true}/>
+        </Main>
+      </Router>
+    </Provider>
   );
 }
 

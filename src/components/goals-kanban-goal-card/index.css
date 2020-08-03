@@ -1,0 +1,36 @@
+.kanban-goal-card {
+    width: 90%;
+    height: 140px;
+    background-color: white;
+    border-radius: 1px solid #e1e1e1;
+    padding: 10px;
+    box-shadow: 3px 7px 29px -1px rgba(138, 138, 138, 0.75);
+    border-radius: 5px;
+    transition: border 300ms ease-out;
+    margin-bottom: 5px;
+}
+
+.kanban-goal-card:hover {
+    border: 2px solid #48487a;
+}
+
+.kanban-goal-card-header-container {
+    display: flex;
+    justify-content: space-between;
+    max-height: 16px;
+}
+
+.kanban-goal-card-status-edit-container {
+    display: flex;
+}
+
+.kanban-goal-card-title-display {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.kanban-goal-card-task-progress-bar-container {
+    position: relative;
+    left: -15px;
+}

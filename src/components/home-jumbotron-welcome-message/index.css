@@ -1,0 +1,23 @@
+.home-welcome-message-container {
+    color: #ececec;
+    width: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.home-welcome-message-container h2 {
+    font-size: 42px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.home-welcome-message-container p {
+    font-weight: 800;
+}
+
+.home-welcome-message-container .no-margin {
+    font-weight: 600;
+}
+

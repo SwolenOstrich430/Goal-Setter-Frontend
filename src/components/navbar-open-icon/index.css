@@ -1,0 +1,28 @@
+.navbar-open-icon-container {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-open-icon {
+    width: 40px;
+    height: 60px;
+    transition: transform 400ms ease;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.navbar-open-icon-container:hover {
+    filter: grayscale(0) opacity(1);
+    background-color: #6565aa;
+    transition: 500ms ease-in-out;
+}
+
+.secondary {
+    color: #b6b6b6;
+}
+
+.primary {
+    color: #ececec;
+}

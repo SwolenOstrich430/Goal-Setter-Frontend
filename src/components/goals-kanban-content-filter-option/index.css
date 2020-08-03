@@ -1,0 +1,20 @@
+.goals-kanban-content-option-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: background-color 200ms ease-out;
+    padding: 10px 5px;
+}
+
+.goals-kanban-content-option-container:hover {
+    background-color: rgba(240, 240, 240, 0.7);
+}
+
+.kanban-list-bullet {
+    width: 10px;
+    height: 10px;
+}
+
+.goals-kanban-content-option {
+    margin-left: 10px;
+}
