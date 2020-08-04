@@ -2,17 +2,16 @@ import React, { useState } from "react";
 import "./index.css";
 import { useSelector, connect } from "react-redux";
 import FilterOption from "../goals-kanban-content-filter-option";
+import goalHelpers from "../../helpers/goalDisplay";
 import { setGoalToEdit } from "../../actions/goalsDisplayActions";
 
 
 function KanbanContentFilter(props) {
     const goals = useSelector(state => state.goalsReducers.goals);
+    const goalIdToEdit = useSelector(state => state.goalsDisplayReducers.goalIdToEdit);
     const [showContentSelector, setShowContentSelector] = useState(false);
 
     const handleClick = id => {
-        console.log("clicked");
-        console.log("here's the id: " + id);
-
         props.setGoalToEdit(id);
     }
 
@@ -26,13 +25,20 @@ function KanbanContentFilter(props) {
         ))
     }
 
+    const getDisplayText = () => {
+        if(!goalIdToEdit) return "All";
+        
+        let goal = goalHelpers.getGoalToEdit(goalIdToEdit, goals);
+        return goal.title;
+    }
+
     return (
-        <div className="goals-kanban-content-filter">
+        <div className="goals-kanban-content-filter" onClick={() => setShowContentSelector(!showContentSelector)}>
             <button 
                 className="auth-button auth-dark goals-kanban-content-selector-button"
                 onClick={() => setShowContentSelector(!showContentSelector)}
             >
-                Show: All
+                Show: {getDisplayText()}
             </button>
             {showContentSelector &&
             <div className="goals-kanban-content-selector">

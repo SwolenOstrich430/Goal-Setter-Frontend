@@ -1,3 +1,7 @@
 .goal-edit-goal-modal-task-check-button-title-container {
     align-items: center;
 }
+
+.goal-edit-goal-modal-task-check-button:focus {
+    outline: none;
+}

@@ -9,11 +9,12 @@ import goalDisplayHelpers from "../../helpers/goalDisplay";
 function TaskList() {
     const goalIdToEdit = useSelector(state => state.goalsDisplayReducers.goalIdToEdit);
     const goals = useSelector(state => state.goalsReducers.goals);
-    const tasks = goalDisplayHelpers.getTasks(goalIdToEdit, goals);
+    const tasks = useSelector(state => state.tasksReducers.tasks[goalIdToEdit]);
+    console.log(tasks);
     
     return (
         <div className="goals-edit-goal-modal-tasks-container">
-            <TaskProgressHeader tasks={tasks}/>
+            <TaskProgressHeader tasks={tasks} transitions={true}/>
             <div className="goals-edit-goal-modal-tasks-list">
                 {tasks.map(task => (
                     <TaskDisplay endDate={task.endDate} title={task.title} 

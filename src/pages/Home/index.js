@@ -10,7 +10,7 @@ function Home() {
     const isAuthenticated = useSelector(state => state.authReducers.isAuthenticated)
     let history = useHistory();
 
-    if(isAuthenticated) history.push("/dashboard");
+    if(isAuthenticated) history.push("/goals");
     
     return (
         <div>

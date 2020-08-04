@@ -21,6 +21,7 @@ export const GET_NOTES = "GET_NOTES";
 export const NOTES_ERROR = "NOTE_ERROR";
 export const SET_GOAL_TO_EDIT = "SET_GOAL_TO_EDIT"
 export const UPDATE_TASK_ORDER = "UPDATE_TASK_ORDER";
+export const GET_TASKS = "GET_TASKS";
 
 // CALENDAR ACTIONS 
 export const DATE_RANGE_CHANGE = "DATE_RANGE_CHANGE";

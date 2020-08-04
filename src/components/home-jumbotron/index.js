@@ -10,15 +10,15 @@ function HomeJumbotron() {
 
     return (
         <div className="home-jumbotron-container">
+            <div className="home-welcome-message-container">
+                <HomeWelcomeMessage/>
+            </div>
             <svg className="home-jumbotron-wave" viewBox="0 0 500 150" preserveAspectRatio="none" 
                  style={{"height": "100%", "width": "100%"}}>
                 <path d="M0.00,150 C200.09,140.18 260.20,60.00 500.00,150.48 Z"
                       style={{"stroke": "none", "fill": "#fff"}}>
                 </path>
             </svg>
-            <div className="home-welcome-message-container">
-                <HomeWelcomeMessage/>
-            </div>
             <div className="home-jumbotron-auth-container">
                 {(loginSignUpStatus === "login") ? <LoginForm/> : <SignUpForm/>}
             </div>

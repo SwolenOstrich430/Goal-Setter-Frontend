@@ -1,7 +1,8 @@
 .home-jumbotron-container {
-    width: 100%;
-    height: 55vh;
+    width: calc(100% - 15px);
+    height: 50vh;
     background-color: #23232e;
+    padding-left: 15px;
 }
 
 .home-jumbotron-wave {
@@ -11,12 +12,13 @@
 .home-welcome-message-container {
     position: absolute;
     top: 10%;
+    max-width: 70%;
     left: 15px;
 }
 
 .home-jumbotron-auth-container {
     position: absolute;
     top: 10%;
-    right: 2.5%;
+    right: 30px;
     z-index: 10;
 }

@@ -12,7 +12,7 @@ function TopNavbar(props) {
     return (
         <nav className="top-navbar-container">
             <h3 className="top-navbar-header">Goal Setter</h3>
-            <div className="auth-modal-buttons-container auth-margin-right">
+            <div className="auth-modal-buttons-container">
                 <button 
                   className={`auth-button auth-modal-button ${loginClass}`} 
                   onClick={() => props.setLoginSignUpStatus("login")}

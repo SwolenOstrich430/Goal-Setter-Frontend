@@ -1,7 +1,7 @@
 import { GET_GOALS, CREATE_GOAL, GOALS_ERROR,
          UPDATE_GOAL, DELETE_GOAL, DELETE_TASK, 
          UPDATE_TASK, GET_NOTES, UPDATE_GOAL_ORDER, 
-         UPDATE_TASK_ORDER } from "./types";
+         UPDATE_TASK_ORDER, GET_TASKS } from "./types";
 import axios from "axios";
 
 const getAuthHeader = () => {
@@ -46,6 +46,13 @@ export const getGoals = () => dispatch => {
 
         dispatch({
             type: GET_NOTES, 
+            payload: {
+                goals: response.data
+            }
+        })
+
+        dispatch({
+            type: GET_TASKS, 
             payload: {
                 goals: response.data
             }

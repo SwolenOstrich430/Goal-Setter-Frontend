@@ -7,6 +7,7 @@
     align-items: center;
     padding: 5px 10px;
     border: 1px solid #e1e1e1;
+    width: 80px;
 }
 
 .task-end-date-display {

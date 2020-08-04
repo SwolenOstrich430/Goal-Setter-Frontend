@@ -7,15 +7,14 @@ import Goals from "./pages/Goals"
 import Calendar from "./pages/Calendar";
 import { Provider } from "react-redux";
 import store from "./store.js";
-import SideNavbar from "./components/navbar-side";
 import './App.css';
 
 function App() {
   return (
+    <div className="app-container">
     <Provider store={store}>
       <Router>
         <Route component={Home} path="/" exact={true}/>
-        <SideNavbar/>
         <Main>
           <Route component={Goals} path="/goals" exact={true}/>
           <Route component={Dashboard} path="/dashboard" exact={true}/>
@@ -23,6 +22,7 @@ function App() {
         </Main>
       </Router>
     </Provider>
+    </div>
   );
 }
 

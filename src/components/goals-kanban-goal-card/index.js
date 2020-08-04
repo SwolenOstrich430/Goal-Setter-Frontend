@@ -16,7 +16,7 @@ function KanbanGoalCard(props) {
                 </div>
                 <StatusDisplay textValue={props.goal.status} isStatus={true}/>
                 <div className="kanban-goal-card-task-progress-bar-container">
-                    <TaskProgressHeader tasks={props.goal.tasks}/>
+                    <TaskProgressHeader tasks={props.goal.tasks} transitions={true}/>
                 </div>
             </div>
         )}

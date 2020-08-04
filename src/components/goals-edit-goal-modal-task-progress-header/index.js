@@ -38,4 +38,4 @@ function TaskProgressHeader(props) {
     )
 }
 
-export default TaskProgressHeader
+export default TaskProgressHeader;

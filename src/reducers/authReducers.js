@@ -10,7 +10,7 @@ const initialState = {
 
 export default function(state=initialState, action) {
     const payload = {...action.payload};
-
+    console.log(state);
     switch(action.type) {
         case AUTHENTICATE_USER:
             

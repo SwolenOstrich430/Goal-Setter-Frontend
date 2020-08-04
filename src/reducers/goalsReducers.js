@@ -1,6 +1,6 @@
 import { getGoalToEditAndIndex } from "../helpers/goalHelpers";
 import { GET_GOALS, CREATE_GOAL, GOALS_ERROR,
-         UPDATE_GOAL, DELETE_GOAL, DELETE_TASK, 
+         UPDATE_GOAL, DELETE_GOAL, 
         UPDATE_TASK, UPDATE_GOAL_ORDER, 
         UPDATE_TASK_ORDER} from "../actions/types";
 
@@ -89,11 +89,7 @@ export default function(state=initialState, action) {
             return {
                 ...state
             } 
-        case DELETE_TASK: 
-            return {
-                ...state, 
-                goals: filterTasks(payload.goalId, payload.taskId)
-            }
+    
         case UPDATE_TASK: 
             return {
                 ...state, 
