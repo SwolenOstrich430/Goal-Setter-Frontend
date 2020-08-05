@@ -52,7 +52,6 @@ export default function(state=initialState, action) {
     }
 
 
-
     switch(action.type) {
         case GET_GOALS: 
             return {
@@ -89,13 +88,6 @@ export default function(state=initialState, action) {
             return {
                 ...state
             } 
-    
-        case UPDATE_TASK: 
-            return {
-                ...state, 
-                goals: getUpdatedGoal(payload.goalId, payload.editedTask)
-
-            }
 
         case UPDATE_TASK_ORDER: 
             return {

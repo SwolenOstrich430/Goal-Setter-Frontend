@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { deleteTask } from "../../actions/goalsActions";
 import { connect, useSelector } from "react-redux";
-import { updateTask } from "../../actions/goalsActions";
+import { updateTask } from "../../actions/tasksActions";
 import "./index.css";
 import TaskEndDateButton from "../goals-task-end-date-button";
 import EditTaskTitle from "../goals-edit-task-title";
@@ -40,7 +40,7 @@ function TaskDisplay(props) {
             taskToEdit[key] = value;
         }
 
-        props.updateTask(taskToEdit, goalIdToEdit);
+        props.updateTask(goalIdToEdit, taskToEdit);
     }
 
     const handleIsCompleteChange = () => {

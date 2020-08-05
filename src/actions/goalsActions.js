@@ -50,7 +50,7 @@ export const getGoals = () => dispatch => {
                 goals: response.data
             }
         })
-
+        
         dispatch({
             type: GET_TASKS, 
             payload: {

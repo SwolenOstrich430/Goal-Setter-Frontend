@@ -3,14 +3,11 @@ import { useSelector } from "react-redux";
 import "./index.css";
 import TaskProgressHeader from "../goals-edit-goal-modal-task-progress-header";
 import TaskDisplay from "../goals-edit-goal-modal-task-container";
-import goalDisplayHelpers from "../../helpers/goalDisplay";
 
 
 function TaskList() {
     const goalIdToEdit = useSelector(state => state.goalsDisplayReducers.goalIdToEdit);
-    const goals = useSelector(state => state.goalsReducers.goals);
     const tasks = useSelector(state => state.tasksReducers.tasks[goalIdToEdit]);
-    console.log(tasks);
     
     return (
         <div className="goals-edit-goal-modal-tasks-container">

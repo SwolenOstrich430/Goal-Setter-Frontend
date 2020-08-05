@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import "./index.css";
-// import { connect, useSelector } from "react-redux";
-// import { updateGoal } from "../../actions/goalsActions";
-// import goalDisplayHelpers from "../../helpers/goalDisplay";
 
 
 function EditTaskTitle(props) {

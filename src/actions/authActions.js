@@ -16,6 +16,7 @@ const recieveAuthentication = (authenticationResponse) => {
     return {
         type: AUTHENTICATION_SUCCESS,
         payload: {
+            authenticationRequest: {},
             isFetching: false,
             isAuthenticated: true,
             token: authenticationResponse.token
@@ -29,7 +30,8 @@ const recieveAuthenticationError = (message) => {
       payload: {
         isFetching: false,
         isAuthenticated: false,
-        errorMessage: message
+        errorMessage: message, 
+        authenticationRequest: {}
       }
     }
 }

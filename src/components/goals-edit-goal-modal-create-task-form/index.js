@@ -12,10 +12,16 @@ function CreateTaskForm(props) {
     const goalIdToEdit = useSelector(store => store.goalsDisplayReducers.goalIdToEdit);
 
     const buildTask = () => {
-        return {
+        const newTask = {
             title: taskTitle, 
             endDate: selectedDate
         }
+
+        setSelectedDate(new Date());
+        setTitle("");
+        setDateIsSelected(false);
+
+        return newTask;
     }
 
     return (

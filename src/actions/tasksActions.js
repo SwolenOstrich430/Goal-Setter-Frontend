@@ -1,4 +1,4 @@
-import { CREATE_TASK, TASKS_ERROR } from "./types";
+import { CREATE_TASK, UPDATE_TASK, TASKS_ERROR } from "./types";
 import axios from "axios";
 
 const getAuthHeader = () => {
@@ -37,6 +37,29 @@ export const createTask = (goalId, task) => dispatch => {
         return dispatch({
             type: CREATE_TASK, 
             payload: {
+                goalId: goalId,
+                task: response.data
+            }
+        })
+    })
+    .catch(error => sendError(error, dispatch));
+}
+
+export const updateTask = (goalId, task) => dispatch => {
+    let requestConfig = {
+        method: "PUT",
+        headers: getAuthHeader(),
+        url: "/goals/tasks", 
+        data: task,
+        params: {goalId: goalId}
+    }
+
+    axios.request(requestConfig)
+    .then(response => {
+        return dispatch({
+            type: UPDATE_TASK, 
+            payload: {
+                goalId: goalId, 
                 task: response.data
             }
         })
