@@ -11,6 +11,8 @@ Below, you can find a video with the current functionality as well as a list of 
 ### Demo
 ![](goal-setter-mvp.gif)
 
+(Apologies for the speed and quality, this is the best I could get for a free converter.)
+
 ### Technology Used
 <ul>
   <li>React</li>
