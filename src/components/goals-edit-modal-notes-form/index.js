@@ -30,10 +30,10 @@ function CreateNoteForm(props) {
         if(newNote.length === 0) return;
 
         if(event.keyCode === 13 && event.shiftKey === false) {
-                    event.preventDefault();
+            event.preventDefault();
 
             props.createNote(goalIdToEdit, {text: newNote});
-            props.scrollToBottom();
+            setNewNote("");
         }
 
     }

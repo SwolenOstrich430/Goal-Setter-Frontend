@@ -3,6 +3,15 @@
     background-color: white;
     border-radius: 5px;
     margin-top: 5px;
+    z-index: 10;
+    max-height: 240px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+
+.goals-kanban-content-selector::-webkit-scrollbar { 
+    display: none;  
 }
 
 .goals-kanban-content-selector-button {

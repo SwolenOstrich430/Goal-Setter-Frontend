@@ -23,6 +23,14 @@ function TaskProgressHeader(props) {
 
     const getLength = () => props.tasks.length;
 
+    const getTransitionStyling = () => {
+        if(props.transition != undefined && props.transition === false) {
+            return {"width": `${getPercentComplete()}%`}
+        } else {
+            return {"width": `${getPercentComplete()}%`, "transition": "width 300ms ease-out"}
+        }
+    }
+
 
     return (
         <div className="goals-edit-goal-modal-tasks-header">
@@ -30,7 +38,7 @@ function TaskProgressHeader(props) {
                 {getPercentComplete()}% ({getNumComplete()} out of {getLength()}) Completed
             </h5>
             <div className="goals-edit-goal-modal-tasks-percent-completed-tracker-container">
-                <div style={{width: `${getPercentComplete()}%`}} 
+                <div style={getTransitionStyling()} 
                  className="goals-edit-goal-modal-tasks-percent-completed-tracker">
                 </div>
             </div>

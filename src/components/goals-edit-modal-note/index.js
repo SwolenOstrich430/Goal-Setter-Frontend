@@ -1,10 +1,11 @@
 import React from "react";
 import "./index.css";
+import moment from "moment";
 
 function Note(props) {
 
     const getEndDateDisplay = endDate => {
-        return "12 minutes ago";
+        return `${moment(endDate).format("hh:mm a")}`;
     }
 
     return (

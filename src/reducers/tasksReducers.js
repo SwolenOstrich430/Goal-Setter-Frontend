@@ -75,7 +75,6 @@ export default function(state=initialState, action) {
             }
 
         case UPDATE_TASK: 
-            console.log("got in update task");
             return {
                 ...state, 
                 tasks: updateTasks(state.tasks, payload.goalId, payload.task)

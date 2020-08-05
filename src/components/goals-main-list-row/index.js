@@ -23,7 +23,7 @@ function GoalMainListRow(props) {
     }
 
     const getPercentTasksComplete = tasks => {
-        if(tasks.length === 0) return 0;
+        if(tasks === undefined || tasks.length === 0) return 0;
 
         let totalComplete = 0;
 
@@ -40,7 +40,7 @@ function GoalMainListRow(props) {
         return KEYS.map((key, i) => {
             if(key === "progress") {
                 return (
-                    <GoalPercentageCompleteIcon key={key} percentComplete={getPercentTasksComplete(props.data.tasks)}/>   
+                    <GoalPercentageCompleteIcon key={key} percentComplete={getPercentTasksComplete(props.tasks)}/>   
                )  
             } else {
                 return (

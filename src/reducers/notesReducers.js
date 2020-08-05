@@ -21,7 +21,7 @@ export default function(state=initialState, action) {
     switch(action.type) {
         case CREATE_NOTE: 
             const  { goalIdToEdit, createdNote } = payload;
-
+            console.log("in create note");
             return {
                 ...state, 
                 notes: {

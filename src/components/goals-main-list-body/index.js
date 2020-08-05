@@ -6,11 +6,14 @@ import { useSelector } from "react-redux";
 
 function GoalMainListBody(props) {
     const goals = useSelector(state => state.goalsReducers.goals);
-
+    const tasks = useSelector(state => state.tasksReducers.tasks);
+    console.log(tasks);
     return (
         <div className="goal-main-list-body-container">
             <AddNewGoalButton/>
-            {goals.map(row => <GoalMainListRow data={row} key={row.id}/>)}
+            {goals.map(row => (
+                <GoalMainListRow data={row} key={row.id} tasks={tasks[row.id]}/>
+            ))}
         </div>
     )
 }

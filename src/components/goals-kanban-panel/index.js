@@ -42,6 +42,7 @@ function KanbanPanel(props) {
                     index={props.cards[j].place}
                     goal={props.cards[j]}
                     key={`${props.cards[j].status}-${props.cards[j].place}`}
+                    transition={false}
                 />
             )
 

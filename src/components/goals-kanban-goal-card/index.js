@@ -4,8 +4,11 @@ import { Draggable } from "react-beautiful-dnd";
 import GoalEditButton from "../goals-goal-edit-button";
 import TaskProgressHeader from "../goals-edit-goal-modal-task-progress-header";
 import StatusDisplay from "../goals-main-list-cell";
+import { useSelector } from "react-redux";
 
 function KanbanGoalCard(props) {
+    const tasks = useSelector(state => state.tasksReducers.tasks);
+
     return (
         <Draggable draggableId={props.draggableId} index={props.index} goalId={props.goal.id}>
         {(provided) => (
@@ -16,7 +19,7 @@ function KanbanGoalCard(props) {
                 </div>
                 <StatusDisplay textValue={props.goal.status} isStatus={true}/>
                 <div className="kanban-goal-card-task-progress-bar-container">
-                    <TaskProgressHeader tasks={props.goal.tasks} transitions={true}/>
+                    <TaskProgressHeader tasks={tasks[props.goal.id]} transitin={props.transition}/>
                 </div>
             </div>
         )}
