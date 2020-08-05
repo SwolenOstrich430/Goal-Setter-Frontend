@@ -9,7 +9,7 @@ Below, you can find a video with the current functionality as well as a list of 
 
 
 ### Demo
-<img src="goal-setter-mvp.mov"/>
+![](goal-setter-mvp (1).gif)
 
 ### Technology Used
 <ul>
