@@ -9,6 +9,8 @@ Below, you can find a video with the current functionality as well as a list of 
 
 
 ### Demo
+![](goal-setter-mvp.mov)
+
 
 ### Technology Used
 <ul>
